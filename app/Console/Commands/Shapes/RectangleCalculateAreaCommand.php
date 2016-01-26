@@ -29,7 +29,12 @@ class RectangleCalculateAreaCommand extends Command {
 		$w = $this->argument('width');
 		$h = $this->argument('height');
 
-		$this->info("Output the calculated area of a rectangle with a width of $w and height of $h");
+
+        $area = $h*$w;
+
+
+
+		$this->info("Output the calculated area of a rectangle with a width of $w and height of $h is: $area");
 	}
 
 	/**

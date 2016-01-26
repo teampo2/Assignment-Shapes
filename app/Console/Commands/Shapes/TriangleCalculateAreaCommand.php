@@ -28,8 +28,8 @@ class TriangleCalculateAreaCommand extends Command {
 	{
 		$b = $this->argument('base');
 		$h = $this->argument('height');
-
-		$this->info("Output the calculated area of a triangle with a base of $b and height of $h");
+		$area = 0.5*$b*$h;
+		$this->info("Output the calculated area of a triangle with a base of $b and height of $h is: $area");
 	}
 
 	/**

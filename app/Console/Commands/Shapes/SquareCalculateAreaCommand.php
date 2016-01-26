@@ -27,8 +27,8 @@ class SquareCalculateAreaCommand extends Command {
 	public function fire()
 	{
 		$l = $this->argument('length');
-
-		$this->info("Output the calculated area of a square with a length of $l");
+		$area = pow($l,2);
+		$this->info("Output the calculated area of a square with a length of $l is: $area");
 	}
 
 	/**

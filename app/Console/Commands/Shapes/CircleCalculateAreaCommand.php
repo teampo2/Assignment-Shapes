@@ -28,7 +28,9 @@ class CircleCalculateAreaCommand extends Command {
 	{
 		$r = $this->argument('radius');
 
-		$this->info("Output the calculated area of a circle with radius of $r");
+		$area = 3.14*pow($r,2);
+
+		$this->info("Output the calculated area of a circle with radius of $r is: $area");
 	}
 
 	/**
